@@ -57,11 +57,50 @@ footer {
   }
 }
 
+@include desktop-up {
+  .footer-wrapper {
+    padding: 15.25rem 2.25rem 0;
+    background-size: contain;
+    .footer-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #222330;
+      border-bottom: 1px solid #222330;
+    }
+  }
+  .partner-list {
+    padding: 0;
+    .partner {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &__logo {
+        padding: 0 1.625rem;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        &--reverse {
+          order: -1;
+          padding: 0 1.25rem 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
 @include big-desktop-up {
   .footer-wrapper {
     padding: 27.25rem 16.25rem 0;
     background: url('~@/assets/images/background-footer-2x.svg') top center
     no-repeat;
+    background-size: cover;
     .footer-header {
       display: grid;
       grid-template-columns: 1fr 1fr;

@@ -1,0 +1,15 @@
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 26rem;
+  .banner {
+    min-height: inherit;
+    background:
+      linear-gradient(180deg, #15161E 7.29%, rgba(21, 22, 30, 0.38) 100%),
+      url('~@/assets/images/background-banner.png') no-repeat left 25% top 40%;
+    background-size: 400% auto;
+    @media (min-width: 1024px) {
+      background-size: cover;
+    }
+  }
+}

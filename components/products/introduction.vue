@@ -28,13 +28,3 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
-.product-introduction {
-  @media (min-width: 1281px) {
-    padding: 14.8rem 10rem 5.2rem;
-  }
-  @media (min-width: 1920px) {
-    padding: 14.8rem 26rem 5.2rem;
-  }
-}
-</style>

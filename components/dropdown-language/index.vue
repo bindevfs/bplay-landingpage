@@ -5,10 +5,10 @@
       <span class="dropdown__text">ENG</span>
       <span class="dropdown__icon"></span>
     </div>
-    <div :class="['menu', { show: is_toggle }]">
-      <div class="menu__item">Option 1</div>
-      <div class="menu__item">Option 2</div>
-    </div>
+    <!--    <div :class="['menu', { show: is_toggle }]">-->
+    <!--      <div class="menu__item">Option 1</div>-->
+    <!--      <div class="menu__item">Option 2</div>-->
+    <!--    </div>-->
   </div>
 </template>
 <script>

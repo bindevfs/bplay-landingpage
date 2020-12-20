@@ -1,9 +1,6 @@
 .introduction {
   text-align: center;
   $self: &;
-  &--align-left {
-    text-align: left;
-  }
   &__head {
     font-size: 0.75rem;
     line-height: 0.875rem;
@@ -30,6 +27,9 @@
 @include tablet-landscape-up {
   .introduction {
     $self: &;
+    &--align-left {
+      text-align: left;
+    }
     &--left {
       display: grid;
       grid-template-columns: auto 2fr;

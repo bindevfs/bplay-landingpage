@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1.875rem 0;
   &__logo {
     margin-bottom: 14px;
     width: calc((100% - 3px) / 3);
@@ -14,9 +13,21 @@
 
 @include tablet-landscape-up {
   .software {
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    direction: ltr;
+    justify-content: flex-start;
+    margin-left: -1.25rem;
     &__logo {
-      width: calc((100% - 8rem) / 3);
+      margin-bottom: 14px;
+      grid-column: span 3;
+      width: 100%;
+      &:last-child:nth-child(2n - 1) {
+        grid-column-end: -6;
+      }
+      &:nth-last-child(2):nth-child(2n - 2) {
+        grid-column-end: 5;
+      }
     }
   }
 }

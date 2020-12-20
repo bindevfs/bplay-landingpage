@@ -1,0 +1,27 @@
+.b-button {
+  background: url('~@/assets/images/background-button.svg') center no-repeat;
+  background-size: contain;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fffdf1;
+  font-weight: 700;
+  outline: none;
+  width: 100%;
+  height: 35px;
+}
+
+@include desktop-up {
+  .b-button {
+    height: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@include big-desktop-up {
+  .b-button {
+    font-size: 30px;
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
+}

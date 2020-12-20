@@ -15,7 +15,7 @@
     .client {
       display: grid;
       grid-template-columns: repeat(10, auto);
-      grid-gap: 4.3rem 2.4rem;
+      grid-gap: 1rem 2rem;
       justify-items: center;
       &__logo {
         grid-column: span 2;
@@ -32,15 +32,7 @@
   }
 }
 
-@include desktop-up {
-  .client-list {
-    .client {
-      grid-gap: 1rem 2rem;
-    }
-  }
-}
-
-@include desktop-up {
+@include big-desktop-up {
   .client-list {
     .client {
       grid-gap: 4.3rem 2.4rem;
