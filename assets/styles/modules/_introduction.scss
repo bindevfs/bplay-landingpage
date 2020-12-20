@@ -1,0 +1,90 @@
+.introduction {
+  text-align: center;
+  $self: &;
+  &--align-left {
+    text-align: left;
+  }
+  &__head {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.3125rem;
+    color: $red-200;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 1.625rem;
+    line-height: 31px;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+    padding: 8px 0 24px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: $white-gainsboro;
+    font-family: $mulish-font-family;
+  }
+}
+@include tablet-landscape-up {
+  .introduction {
+    $self: &;
+    &--left {
+      display: grid;
+      grid-template-columns: auto 2fr;
+      text-align: left;
+      #{ $self }__subtitle {
+        padding-left: 2.5rem;
+      }
+    }
+  }
+}
+
+@include desktop-up {
+  .introduction {
+    $self: &;
+    &__head {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.625rem;
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      padding: 0.5rem 0 2rem;
+    }
+    &--left {
+      display: grid;
+      grid-template-columns: auto 2fr;
+      text-align: left;
+      #{ $self }__subtitle {
+        padding-left: 4.5rem;
+      }
+    }
+  }
+}
+
+@include big-desktop-up {
+  .introduction {
+    $self: &;
+    &__head {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.625rem;
+    }
+    &__title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      padding: 0.5rem 0 2rem;
+    }
+    &--left {
+      display: grid;
+      grid-template-columns: auto 2fr;
+      text-align: left;
+      #{ $self }__subtitle {
+        padding-left: 6.5rem;
+      }
+    }
+  }
+}

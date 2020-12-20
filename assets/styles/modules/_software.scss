@@ -1,0 +1,22 @@
+.software {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.875rem 0;
+  &__logo {
+    margin-bottom: 14px;
+    width: calc((100% - 3px) / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include tablet-landscape-up {
+  .software {
+    flex-direction: row-reverse;
+    &__logo {
+      width: calc((100% - 8rem) / 3);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin tablet-portrait-up {
+  @media (min-width: $tablet-portrait) { @content; }
+}
+
+@mixin tablet-landscape-up {
+  @media (min-width: $tablet-landscape) { @content; }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop) { @content; }
+}
+
+@mixin big-desktop-up {
+  @media (min-width: $big-desktop) { @content; }
+}

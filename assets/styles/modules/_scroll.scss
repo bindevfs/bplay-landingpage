@@ -1,0 +1,26 @@
+.scroll-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+  span {
+    padding: 0.375rem 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  &--reserve {
+    flex-direction: column-reverse;
+  }
+  &__down {
+    transform: rotate(180deg);
+  }
+}
+
+@include desktop-up {
+  .scroll-button {
+    span {
+      font-size: 1.875rem;
+      line-height: 2.1875rem;
+    }
+  }
+}

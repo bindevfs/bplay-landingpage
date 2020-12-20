@@ -1,0 +1,28 @@
+.carousel-wrapper {
+  padding: 0 0 6.625rem 1rem;
+  .swiper-container {
+    padding: 2.625rem 0;
+    .swiper-slide {
+      max-width: 266px;
+    }
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      height: 7px;
+      width: 7px;
+      background-color: $black-currant;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: unset;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $red-100;
+    }
+  }
+}
+
+@include tablet-portrait-up {
+  .carousel-wrapper {
+    display: none;
+  }
+}

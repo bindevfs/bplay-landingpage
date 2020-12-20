@@ -1,0 +1,10 @@
+.navbar-toggle {
+  padding-left: 1.75rem;
+  outline: none;
+}
+
+@include desktop-up {
+  .navbar-toggle {
+    display: none;
+  }
+}

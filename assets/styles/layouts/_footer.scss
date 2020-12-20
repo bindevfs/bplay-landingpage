@@ -1,0 +1,108 @@
+footer {
+  position: relative;
+  .footer-scroll-top {
+    position: absolute;
+    right: 10%;
+    bottom: 12%;
+  }
+}
+.footer-wrapper {
+  background: url('~@/assets/images/background-footer.svg') no-repeat;
+  background-size: cover;
+  .footer-header {
+    padding-top: 6rem;
+  }
+}
+.copy-right {
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  color: #cecece;
+  opacity: 0.7;
+  padding: 0.625rem;
+}
+.contact-us {
+  &__information {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+  &__title {
+    color: #fdfdfd;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  &__desc {
+    padding-left: 1rem;
+  }
+}
+
+.partner-list {
+  padding: 0 3.6rem;
+  border-top: 1px solid #222330;
+  border-bottom: 1px solid #222330;
+  .partner {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__logo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include big-desktop-up {
+  .footer-wrapper {
+    padding: 27.25rem 16.25rem 0;
+    background: url('~@/assets/images/background-footer-2x.svg') top center
+    no-repeat;
+    .footer-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #222330;
+      border-bottom: 1px solid #222330;
+    }
+  }
+  .contact-us {
+    &__title {
+      padding: 0 0 1rem;
+      font-size: 34px;
+      line-height: 40px;
+    }
+    &__desc {
+      font-size: 28px;
+      padding-right: 6rem;
+    }
+  }
+  .partner-list {
+    padding: 0;
+    .partner {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &__logo {
+        padding: 0 1.625rem;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        &--reverse {
+          order: -1;
+          padding: 0 1.25rem 0 0.5rem;
+        }
+      }
+    }
+  }
+}

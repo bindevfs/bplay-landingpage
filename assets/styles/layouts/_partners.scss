@@ -1,0 +1,58 @@
+.partners-wrapper {
+  padding: 5rem 0;
+  .partners-image {
+    background-image: url('~@/assets/images/partners/background-circle.svg');
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: left center;
+  }
+}
+
+@include tablet-landscape-up {
+  .partners-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+    height: 40rem;
+    align-items: center;
+    padding: 0;
+    .partners-image {
+      background-image: url('~@/assets/images/partners/background-circle-2x.svg');
+      background-size: 100% auto;
+      display: flex;
+      align-items: center;
+      height: inherit;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include desktop-up {
+  .partners-wrapper {
+    height: 50rem;
+    .partners {
+      padding: 0 8rem 0 2.75rem;
+    }
+  }
+}
+
+@include big-desktop-up {
+  .partners-wrapper {
+    height: 62rem;
+    .partners {
+      padding: 0 18rem 0 3.75rem;
+    }
+    .partners-image {
+      align-items: baseline;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.product-wrapper {
+  background-image: url('~@/assets/images/wild-card.svg'),
+  url('~@/assets/images/background-wave.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto;
+  background-position: top, top 100% center;
+}
+.product-introduction {
+  padding: 5.4rem 0 3.15rem;
+}
+
+@include tablet-landscape-up {
+  .product-wrapper {
+    padding: 0 2rem 10rem;
+    background-image: url('~@/assets/images/wild-card-2x.svg'),
+    url('~@/assets/images/background-wave-2x.svg');
+    background-size: 100% auto, cover;
+  }
+}
+

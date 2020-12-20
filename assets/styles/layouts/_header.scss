@@ -1,0 +1,16 @@
+.header-wrapper {
+  position: relative;
+  background-image: url('~@/assets/images/background-shadow.svg'),
+  url('~@/assets/images/background-casino.png'),
+  url('~@/assets/images/background-red.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100% auto;
+  height: calc(100vw + 3.5rem);
+  width: 100%;
+  @include tablet-portrait-up {
+    height: calc(100vw / 1.6);
+    background-image: url('~@/assets/images/background-shadow-2x.svg'),
+    url('~@/assets/images/background-casino-2x.png'),
+    url('~@/assets/images/background-red-2x.svg');
+  }
+}
