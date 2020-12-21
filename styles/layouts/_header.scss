@@ -7,7 +7,7 @@
   background-size: 100% auto;
   height: calc(100vw + 3.5rem);
   width: 100%;
-  -webkit-animation-name: test;
+  -webkit-animation-name: animation-ease-out;
   -webkit-animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
@@ -19,7 +19,7 @@
   }
 }
 
-@-webkit-keyframes test {
+@-webkit-keyframes animation-ease-out {
   0% {
     opacity: 0;
   }

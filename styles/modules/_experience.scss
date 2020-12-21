@@ -17,7 +17,7 @@
     font-weight: 700;
     font-size: 96px;
     line-height: 112px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto-font-family;
   }
   &__year {
     padding: 0 0.875rem;
@@ -29,7 +29,7 @@
       line-height: 33px;
       text-align: center;
       color: $white;
-      font-family: 'Mulish', sans-serif;
+      font-family: $mulish-font-family;
       padding-bottom: 11px;
       margin-bottom: 11px;
     }
