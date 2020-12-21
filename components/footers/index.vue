@@ -26,31 +26,34 @@
             </div>
           </div>
         </div>
-        <div class="footer-body">
-          <div class="partner-list">
-            <div class="partner">
-              <div class="partner__logo">
-                <img src="~@/assets/images/partners/sabs.svg" alt="sabs" />
-              </div>
-              <div class="partner__logo">
-                <img
-                  src="~@/assets/images/partners/curacao.svg"
-                  alt="curacao"
-                />
-              </div>
-              <div class="partner__logo">
-                <img src="~@/assets/images/partners/itech.svg" alt="sabs" />
-              </div>
-              <div class="partner__logo partner__logo--reverse">
-                <img
-                  src="~@/assets/images/partners/license.svg"
-                  alt="license"
-                />
+        <div class="footer-body-wrapper">
+          <div class="footer-body">
+            <div class="partner-list">
+              <div class="partner">
+                <div class="partner__logo">
+                  <img src="~@/assets/images/partners/sabs.svg" alt="sabs" />
+                </div>
+                <div class="partner__logo">
+                  <img
+                    src="~@/assets/images/partners/curacao.svg"
+                    alt="curacao"
+                  />
+                </div>
+                <div class="partner__logo">
+                  <img src="~@/assets/images/partners/itech.svg" alt="sabs" />
+                </div>
+                <div class="partner__logo partner__logo--reverse">
+                  <img
+                    src="~@/assets/images/partners/license.svg"
+                    alt="license"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="copy-right">
-            Copyright &copy; 2020 bplay.com. All rights reserved.
+            <div class="flex-auto"></div>
+            <div class="copy-right">
+              Copyright &copy; 2020 bplay.com. All rights reserved.
+            </div>
           </div>
         </div>
       </div>

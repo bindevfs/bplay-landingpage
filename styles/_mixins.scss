@@ -16,6 +16,10 @@
   @media (min-width: $desktop) { @content; }
 }
 
+@mixin medium-desktop-up {
+  @media (min-width: $medium-desktop) { @content; }
+}
+
 @mixin big-desktop-up {
   @media (min-width: $big-desktop) { @content; }
 }

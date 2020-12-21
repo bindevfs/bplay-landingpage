@@ -72,6 +72,14 @@
   }
 }
 
+@include medium-desktop-up {
+  .product {
+    &__btn {
+      padding: 1rem 0;
+    }
+  }
+}
+
 @include big-desktop-up {
   .product-list {
     grid-gap: 3rem;

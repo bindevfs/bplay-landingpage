@@ -42,17 +42,26 @@
   }
 }
 
-@include big-desktop-up {
+@include medium-desktop-up {
   .partners-wrapper {
-    height: 62rem;
+    height: 60rem;
     .partners {
-      padding: 0 18rem 0 3.75rem;
+      padding: 0 8rem 0 2.75rem;
     }
     .partners-image {
       align-items: baseline;
       img {
         width: 100%;
       }
+    }
+  }
+}
+
+@include big-desktop-up {
+  .partners-wrapper {
+    height: 62rem;
+    .partners {
+      padding: 0 18rem 0 3.75rem;
     }
   }
 }
