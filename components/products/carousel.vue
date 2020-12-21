@@ -20,7 +20,11 @@ export default {
       swiperOptions: {
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
+        centeredSlides: false,
+        preloadImages: true,
+        slidesPerView: 'auto',
       },
       product: {
         id: 1,
@@ -36,7 +40,7 @@ export default {
     },
   },
   mounted() {
-    this.swiper.slideTo(3, 1000, false)
+    this.swiper.slideTo(0, 1000, false)
   },
 }
 </script>

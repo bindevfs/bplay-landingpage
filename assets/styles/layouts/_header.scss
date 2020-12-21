@@ -7,10 +7,23 @@
   background-size: 100% auto;
   height: calc(100vw + 3.5rem);
   width: 100%;
+  -webkit-animation-name: test;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
   @include tablet-portrait-up {
     height: calc(100vw / 1.6);
     background-image: url('~@/assets/images/background-shadow-2x.svg'),
     url('~@/assets/images/background-casino-2x.png'),
     url('~@/assets/images/background-red-2x.svg');
+  }
+}
+
+@-webkit-keyframes test {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
   }
 }

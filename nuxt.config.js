@@ -13,7 +13,12 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/styles/app.scss'],
 
-  loading: '~/components/loading/index.vue',
+  ssr: false,
+  loadingIndicator: {
+    name: 'pulse',
+    color: '#fff',
+    background: '#15161e',
+  },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~/plugins/slick.js'],
