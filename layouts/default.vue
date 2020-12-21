@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar-collapse />
-    <Nuxt />
+    <Nuxt keep-alive />
   </div>
 </template>
 <script>
