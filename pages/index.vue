@@ -1,5 +1,6 @@
 <template>
   <div class="play-landing">
+    <header-nav />
     <base-header />
     <base-about />
     <base-product />
@@ -9,6 +10,7 @@
   </div>
 </template>
 <script>
+import HeaderNav from '~/components/header-nav'
 import BaseHeader from '~/components/header'
 import BaseAbout from '~/components/abouts'
 import BaseProduct from '~/components/products'
@@ -17,6 +19,7 @@ import BaseClient from '~/components/clients'
 import BaseFooter from '~/components/footers'
 export default {
   components: {
+    HeaderNav,
     BaseHeader,
     BaseAbout,
     BasePartners,

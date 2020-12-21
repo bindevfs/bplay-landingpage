@@ -1,12 +1,22 @@
 .dropdown-language {
+  position: relative;
   .dropdown {
+    cursor: pointer;
     border: 0.5px solid $white;
     box-sizing: border-box;
     border-radius: 6.25rem;
     height: 2.25rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    padding: 0.5625rem;
+    width: 6.25rem;
+    padding: 0 0.4rem;
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
     .title {
       margin: 0.3rem 0.3rem 0.3rem 0.3rem;
       width: 100%;
@@ -25,26 +35,39 @@
     }
   }
   .menu {
-    overflow: hidden;
-    display: none;
-    transition: all 0.5s;
-    max-height: 0;
-    &.show {
-      display: block;
-      opacity: 1;
-      max-height: 100%;
-    }
-  }
-}
-@include desktop-up {
-  .dropdown-language {
-    .dropdown {
-      height: 3rem;
-      padding: 0.875rem;
-      &__text {
-        padding: 0 0.875rem 0 0.4rem;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    background-color: #15161e9c;
+    padding: 0 5px;
+    transition: all 0.5s ease-in;
+    visibility: hidden;
+    &__item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+      img {
+        width: 19px;
+        height: 19px;
       }
+    }
+    &.show {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
 
+@include big-desktop-up {
+  .dropdown-language {
+    .dropdown {
+      height: 3rem;
+    }
+  }
+}

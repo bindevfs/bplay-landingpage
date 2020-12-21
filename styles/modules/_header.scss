@@ -36,10 +36,13 @@
 }
 @include desktop-up {
   .header {
-    padding: 2.625rem 4rem;
     &__item {
       display: flex;
       align-items: center;
+    }
+    &__logo {
+      width: 9.375rem;
+      height: 3.125rem;
     }
   }
   .header-content {
@@ -49,10 +52,9 @@
   }
 }
 
-
 @include big-desktop-up {
   .header {
-    padding: 2.625rem 16.25rem;
+    padding: 1rem 16.25rem;
     &__item {
       display: flex;
       align-items: center;

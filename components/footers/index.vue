@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="contact-us-area">
     <div class="footer-wrapper">
       <div class="container">
         <div class="footer-header">
@@ -7,7 +7,7 @@
             <picture>
               <source
                 srcset="~@/assets/images/logo-2x.svg"
-                media="(min-width: 1920px)"
+                media="(min-width: 1200px)"
               />
               <img src="~@/assets/images/logo.svg" alt="Logo" />
             </picture>

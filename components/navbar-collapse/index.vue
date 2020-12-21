@@ -38,35 +38,3 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-.navbar-collapse-wrapper {
-  background: #15161e;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.5s linear;
-  visibility: hidden;
-  .navbar-collapse {
-    padding: 1.125rem 1rem;
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    &__close {
-      outline: none;
-    }
-  }
-  &.show {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-  }
-}
-</style>

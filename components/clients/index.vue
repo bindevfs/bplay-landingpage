@@ -1,10 +1,10 @@
 <template>
-  <div class="client-wrapper">
+  <section id="clients-area" class="client-wrapper">
     <div class="container">
       <introduction />
       <list />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import Introduction from '~/components/clients/introduction'

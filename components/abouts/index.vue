@@ -1,11 +1,11 @@
 <template>
-  <div class="about-wrapper">
+  <section ref="about-us" id="about-us-area" class="about-wrapper">
     <introduction />
     <div class="relative">
       <maps />
       <banner />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import Maps from '~/components/abouts/maps'

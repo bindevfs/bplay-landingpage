@@ -1,5 +1,5 @@
 <template>
-  <div class="product-wrapper">
+  <section id="products-area" class="product-wrapper">
     <div class="container">
       <introduction />
       <list />
@@ -7,7 +7,7 @@
     <div class="carousel-wrapper">
       <carousel />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import Introduction from '~/components/products/introduction'

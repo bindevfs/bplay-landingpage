@@ -3,7 +3,10 @@
   url('~@/assets/images/background-wave.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
-  background-position: top, top 100% center;
+  background-position: top, top 0 center;
+  @media (min-width: 395px) {
+    background-position: top, top 100% center;
+  }
   @include tablet-landscape-up {
     padding: 0 2rem 10rem;
     background-image: url('~@/assets/images/wild-card-2x.svg'),

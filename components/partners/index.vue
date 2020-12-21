@@ -1,5 +1,5 @@
 <template>
-  <div class="partners-wrapper">
+  <section id="partners-area" class="partners-wrapper">
     <div class="container">
       <div class="partners">
         <div class="partners__item">
@@ -17,7 +17,7 @@
         <img src="~@/assets/images/partners/background-partners.png" alt="" />
       </picture>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import List from '~/components/partners/list'

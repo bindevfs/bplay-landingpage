@@ -1,8 +1,10 @@
 <template>
   <swiper ref="mySwiper" class="swiper" :options="swiperOptions">
-    <swiper-slide v-for="i in 9" :key="i">
-      <product-item :product="product" />
-    </swiper-slide>
+    <template v-for="product in products">
+      <swiper-slide :key="product.id">
+        <product-item :product="product" />
+      </swiper-slide>
+    </template>
     <div slot="pagination" class="swiper-pagination"></div>
   </swiper>
 </template>
@@ -26,17 +28,14 @@ export default {
         preloadImages: true,
         slidesPerView: 'auto',
       },
-      product: {
-        id: 1,
-        image: 'live-casino.png',
-        name: 'Live Casino',
-        desc: 'Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino',
-      },
     }
   },
   computed: {
     swiper() {
       return this.$refs.mySwiper.$swiper
+    },
+    products() {
+      return this.$store.state.products
     },
   },
   mounted() {
