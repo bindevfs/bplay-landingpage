@@ -11,7 +11,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~/assets/styles/app.scss'],
+  css: ['~/styles/app.scss'],
 
   ssr: false,
   loadingIndicator: {
