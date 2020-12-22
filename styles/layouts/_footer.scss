@@ -64,6 +64,12 @@ footer {
     .footer-header {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      &__logo {
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
     }
     .footer-body {
       display: flex;

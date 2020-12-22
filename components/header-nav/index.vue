@@ -1,7 +1,7 @@
 <template>
   <div v-fixed class="header-nav">
     <div class="header">
-      <div class="header__logo">
+      <nuxt-link to="/" class="header__logo">
         <picture>
           <source
             class="about-map__img"
@@ -10,7 +10,7 @@
           />
           <img src="~@/assets/images/logo.svg" alt="Logo" />
         </picture>
-      </div>
+      </nuxt-link>
       <div class="header__item">
         <navbar class="responsive" />
       </div>

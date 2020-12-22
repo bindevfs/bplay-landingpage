@@ -3,7 +3,7 @@
     <div class="footer-wrapper">
       <div class="container">
         <div class="footer-header">
-          <div class="footer-header__logo">
+          <nuxt-link to="/" class="footer-header__logo">
             <picture>
               <source
                 srcset="~@/assets/images/logo-2x.svg"
@@ -11,7 +11,7 @@
               />
               <img src="~@/assets/images/logo.svg" alt="Logo" />
             </picture>
-          </div>
+          </nuxt-link>
           <div class="contact-us">
             <h2 class="contact-us__title">contact us</h2>
             <div class="contact-us__information">
